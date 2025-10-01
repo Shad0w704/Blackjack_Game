@@ -1,5 +1,16 @@
 import Image from "next/image";
 
+// import { calculateHandValue, } from '@/lib/game';
+// type Card = {
+//   suit: 'Diamonds' | 'Spades' | 'Hearts' | 'Clubs';
+//   value: '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | 'J' | 'Q' | 'K' | 'A';
+// }
+// const testHand = [
+//   { suit: 'Hearts', value: 'A' } as Card,
+//   { suit: 'Spades', value: 'K' } as Card
+// ];
+// console.log('Hand value:', calculateHandValue(testHand)); // Should be 11
+
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
@@ -14,7 +25,7 @@ export default function Home() {
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
+            Get started by editing{" thisisanedit"}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
               app/page.tsx
             </code>
