@@ -537,7 +537,7 @@ export default function BlackjackGame() {
     {showAuthForm && <AuthForm onClose={() => setShowAuthForm(false)} onSuccess={() => setShowSavePrompt(false)} />}
     
     {/* Mobile: Coins below title, Desktop: Coins top right */}
-    <div className="flex flex-col items-center mb-8 mt-8 md:mt-0"> {/* Added mt-8 for mobile spacing */}
+    <div className="flex flex-col items-center mb-2 mt-8 md:mt-0"> {/* Added mt-8 for mobile spacing */}
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-2 text-yellow-400">♠ BLACKJACK ♥</h1>
       
       {/* Mobile chips display */}
@@ -930,7 +930,7 @@ export default function BlackjackGame() {
           )}
 
           {gameState !== 'waiting' && (
-            <div className="fixed bottom-8 left-0 right-0 text-center">
+            <div className="mt-auto mb-8 text-center">
               <div className="text-2xl font-semibold">
                 Current Bet: <span className="text-yellow-400">${currentBet}</span>
               </div>
