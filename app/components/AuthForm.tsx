@@ -113,7 +113,7 @@ export default function AuthForm({ onClose, onSuccess }: AuthFormProps) {
       <div className="bg-gradient-to-br from-green-800 to-green-900 rounded-xl shadow-2xl p-8 max-w-md w-full border-4 border-yellow-500">
         <button
           onClick={onClose}
-          className="float-right text-white hover:text-red-400 text-4xl font-bold leading-none"
+          className="float-right text-white hover:text-red-400 text-4xl font-bold leading-none cursor-pointer"
         >
           ×
         </button>
@@ -171,13 +171,13 @@ export default function AuthForm({ onClose, onSuccess }: AuthFormProps) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-yellow-500 text-black font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors disabled:bg-gray-500 disabled:cursor-not-allowed"
+            className="w-full bg-yellow-500 text-black font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors disabled:bg-gray-500 disabled:cursor-not-allowed cursor-pointer"
           >
             {loading ? 'Loading...' : mode === 'signin' ? 'Sign In' : 'Create Account'}
           </button>
         </form>
 
-        <div className="my-6 flex items-center">
+        {/* <div className="my-6 flex items-center">
           <div className="flex-1 border-t-2 border-gray-400"></div>
           <span className="px-4 text-gray-300 font-semibold">OR</span>
           <div className="flex-1 border-t-2 border-gray-400"></div>
@@ -195,12 +195,12 @@ export default function AuthForm({ onClose, onSuccess }: AuthFormProps) {
             <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
           </svg>
           Continue with Google
-        </button>
+        </button> */}
 
         <div className="mt-6 text-center">
           <button
             onClick={() => setMode(mode === 'signin' ? 'signup' : 'signin')}
-            className="text-yellow-400 hover:text-yellow-300 font-semibold"
+            className="text-yellow-400 hover:text-yellow-300 font-semibold cursor-pointer"
           >
             {mode === 'signin' 
               ? "Don't have an account? Sign up" 
